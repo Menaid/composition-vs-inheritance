@@ -1,12 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace composition_vs_inheritance;
 
-namespace composition_vs_inheritance
+public class User
 {
-    internal class User
+    public string FirstName;
+    public string LastName;
+    public readonly string UserName;
+    public string DOB;
+    public string Email;
+    private string _password;
+
+    public User(string username, string email)
     {
+        UserName = username;
+        Email = email;
     }
+
+    public int Age()
+    {
+        throw new NotImplementedException();
+    }
+
+
+
 }
